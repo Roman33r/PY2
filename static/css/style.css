@@ -1,0 +1,23 @@
+.form-contact label{
+    display: inline-block;
+    min-width: 80px;
+}
+
+.form-contact p{
+    margin: 10px 0px 10px 0px;
+}
+
+.flash{
+    padding: 15px;
+    border-radius: 10px
+}
+
+.flash.success{
+    border: 1px solid #21DB56;
+    background-color: #AEFFC5;
+}
+
+.flash.error{
+    border: 1px solid #FF4343;
+    background-color: #FF9C9C;
+}

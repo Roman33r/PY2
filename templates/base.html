@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ {%block title%}
+    {% if title %}
+    <title>{{title}}</title>
+    {% else %}
+    <title>Flask site</title>
+    {%endif%}
+ {% endblock %}
+    <link type="text/css" href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet">
+</head>
+<body>
+{%block content -%}
+    {%- block mainmenu -%}
+        <ul>
+            {% for el  in menu -%}
+                <li><a href="{{el.url}}">{{el.title}}</a></li>
+            {% endfor -%}
+        </ul>
+    {%- endblock mainmenu -%}
+
+    {% if title -%}
+        <h1>{{title}}</h1>
+    {% else -%}
+        <h1>Random text</h1>
+    {% endif -%}
+{% endblock %}
+</body>
+</html>
