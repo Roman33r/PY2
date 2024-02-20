@@ -7,7 +7,7 @@ class FDataBase:
     def __init__(self, db):
         self.__db = db
         self.__cursor = db.cursor()
-
+    #sadsds
     def get_menu(self):
         sql = '''SELECT * FROM mainmenu'''
         try:
