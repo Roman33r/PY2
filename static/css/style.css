@@ -1,3 +1,6 @@
+body{
+    margin: 0;
+}
 .form-contact label{
     display: inline-block;
     min-width: 80px;
@@ -20,4 +23,67 @@
 .flash.error{
     border: 1px solid #FF4343;
     background-color: #FF9C9C;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+ul.list-posts{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width:600px;
+}
+
+ul.list-posts li{
+    margin: 20px 10px;
+    border: 1px solid #eee;
+
+}
+
+ul.list-posts .title{
+    padding: 5px;
+    margin: 0px;
+    background: #eee;
+
+}
+
+ul.list-posts .title a{
+    text-decoration: none;
+    color: blue;
+}
+
+ul.list-posts .title a:hover{
+    text-decoration: none;
+    color: #43437e;
+}
+
+ul .list-posts .anonce{
+    padding: 10px 5px 10px 5px;
+    margin: 0px;
 }

@@ -14,10 +14,13 @@
 <body>
 {%block content -%}
     {%- block mainmenu -%}
-        <ul>
+        <div class="topnav">
             {% for el  in menu -%}
-                <li><a href="{{el.url}}">{{el.title}}</a></li>
+                <a href="{{el.url}}">{{el.title}}</a>
             {% endfor -%}
+        </div>
+        <ul>
+
         </ul>
     {%- endblock mainmenu -%}
 
